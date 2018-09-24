@@ -40,7 +40,7 @@ export default class SubComponent extends PureComponent {
             query={ALL_RECORD}
           >
             {({ data: { records } }) => (
-              [ this.state, ...records ].map((record, index) => (
+              [ this.state, ...records.filter((ip_address) => ip_address !== this.state.ip_address) ].map((record, index) => (
                 <p key={index}>
                   <span> { record.ip_address } </span>                
                 </p>
