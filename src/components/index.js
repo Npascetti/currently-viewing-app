@@ -1,6 +1,0 @@
-export { default as Content } from './Content'
-export { default as Query } from './Query'
-export { default as Link } from './Link'
-export { default as Spinner } from './Spinner'
-export { default as Message } from './Message'
-export { default as SubComponent } from './SubComponent'
