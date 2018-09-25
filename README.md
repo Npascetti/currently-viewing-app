@@ -1,6 +1,37 @@
-# Currently Viewing App
+ # Currently Viewing App
+
 
 Shows a list of IP addresses viewing the page
+
+## Installation
+
+ Run
+ ```yarn install```
+ 
+ Vendors dll files should be generated automatically in `/public/vendors-[hash].js` every time you change your dependencies.
+
+  ## Development
+
+ Development server is provided by [express framework](https://github.com/expressjs/express). Webpack is injected to the app through [webpack-dev-middleware](https://github.com/webpack/webpack-dev-middleware) and [webpack-hot-middleware](https://github.com/glenjamin/webpack-hot-middleware).
+ 
+ To start the server just run: `yarn dev`
+
+ ## Docker
+ 
+ The development process is not dockerized. However, it is possible to run a production application from docker container:
+ 
+ ```
+ docker-compose up
+ ```
+
+ ## Database
+ 
+ The database is stored inside the ```db.json``` file
+
+ ## Config
+ 
+ The GraphQL endpoint for client difined inside ```src/config.js``` file
+
 
 ## Requirements
 
